@@ -471,6 +471,183 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Section 18: Gamification & Promotion Platform – "POP & WIN" */}
+        <section className="bg-white rounded-xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">18. Gamification & Promotion Platform – &quot;POP &amp; WIN&quot;</h2>
+
+          {/* 18.1 Core Invention */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.1 Core Invention</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>NO unique QR, NO variable print, NO new sleeve artwork.</li>
+              <li>One 6-character code laser-engraved on the wooden stick (inside sleeve = tamper-proof).</li>
+              <li>Code format: 3 letters + 3 digits → 17.5 million combos.</li>
+              <li>Sleeve adds: &quot;Peel &amp; Win – check your stick – weekly draw every Friday – icebreaker-win.com&quot;.</li>
+            </ul>
+          </div>
+
+          {/* 18.2 Consumer Journey */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.2 Consumer Journey</h3>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+              <li>Buy → peel → read stick.</li>
+              <li>One-tap &quot;Login with WhatsApp&quot; on icebreaker-win.com.</li>
+              <li>
+                Enter code → instant result:
+                <ul className="list-disc pl-6 mt-2 space-y-1">
+                  <li>90 % → 5 % coupon for next box</li>
+                  <li>9 % → 100 EGP cash credit</li>
+                  <li>1 % → Golden ticket (grand draw for phones, TVs, holidays)</li>
+                </ul>
+              </li>
+              <li>Cash prizes via Vodafone Cash / InstaPay within 24 h.</li>
+            </ol>
+          </div>
+
+          {/* 18.3 Back-End Logic */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.3 Back-End Logic (Fair &amp; Simple)</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Real-time hash = SHA-256(code + weekly-secret-salt) mod 1,000.</li>
+              <li>000–899 = lose, 900–989 = 100 EGP, 990–999 = Golden.</li>
+              <li>No pre-generated winner list = zero leakage risk.</li>
+            </ul>
+          </div>
+
+          {/* 18.4 Monetising the Prizes */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.4 Monetising the Prizes (Negative-Cost Marketing)</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Phones / TVs – Samsung, Xiaomi, Carrefour: 20–25 % discount for sleeve impressions + un-boxing reels.</li>
+              <li>Holidays – TravelStart voucher codes at -15 %.</li>
+              <li>100 EGP micro-cash funded from 2 EGP/sleeve trade budget → net cost zero.</li>
+              <li>Result: we <strong>earn</strong> 300–800 EGP per big-ticket item.</li>
+            </ul>
+          </div>
+
+          {/* 18.5 Weekly Live Show */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.5 Weekly Live Show (Free Media)</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Friday 7 p.m. Facebook + Instagram + TikTok live draw.</li>
+              <li>Viewers drop &quot;🥭&quot; emoji to enter parallel 50 EGP draw → boosts algorithm.</li>
+              <li>Target: 3–5 k live viewers in 6 weeks; reels reach 20–30 k weekly.</li>
+            </ul>
+          </div>
+
+          {/* 18.6 Data Asset */}
+          <div className="space-y-2 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.6 Data Asset</h3>
+            <p className="text-gray-700">WhatsApp login captures: mobile number, governorate, prize preference.</p>
+            <p className="text-gray-700">→ 200 k opted-in consumers in 12 months → sell sponsored pushes at 200 EGP CPM.</p>
+          </div>
+
+          {/* 18.7 Cost & P&L */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.7 Cost &amp; P&amp;L (per 400 k pcs month)</h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Item</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">EGP</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">Stick laser engraving (one-off)</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">20 000</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">Website / hosting / WhatsApp API</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">4 500</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">Live-show data bundle</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">500</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">100 EGP prizes (9 % win rate)</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">360 000</td>
+                  </tr>
+                  <tr className="bg-green-50">
+                    <td className="px-4 py-2 text-sm font-semibold text-gray-900">Sponsor income</td>
+                    <td className="px-4 py-2 text-sm font-semibold text-gray-900">–400 000</td>
+                  </tr>
+                  <tr className="bg-blue-50">
+                    <td className="px-4 py-2 text-sm font-bold text-gray-900">Net marketing PROFIT</td>
+                    <td className="px-4 py-2 text-sm font-bold text-gray-900">35 000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 18.8 Legal Compliance */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.8 Legal Compliance (Egypt)</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Obtain Ministry of Social Solidarity raffle permit (2 k EGP, 48 h online).</li>
+              <li>Publish T&amp;Cs on site (age 18+, employees excluded, 30-day prize claim).</li>
+              <li>&quot;No purchase necessary&quot; alternative: free sticks at tasting booths → same code pool.</li>
+            </ul>
+          </div>
+
+          {/* 18.9 Roll-Out Road-Map */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">18.9 Roll-Out Road-Map</h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Week</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Milestone</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">1</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">Engrave 50 k sticks, build PWA, shoot teaser reel.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">2</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">Submit permit, sign Samsung and Carrefour prize MoUs.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">3</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">Soft launch in 20 Gourmet branches – monitor redemption %.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">4</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">National launch + first live draw → PR to Masrawy and Youm7.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">6</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">Add &quot;golden holiday&quot; sponsored by TravelStart.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2 text-sm text-gray-800">8</td>
+                    <td className="px-4 py-2 text-sm text-gray-800">Release flavour #2 (Lemon-Mint) with new stick colour = collectors angle.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 18.10 Why Ground-Breaking */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold text-blue-900">18.10 Why Ground-Breaking</h3>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+              <li>Uses existing stick real-estate – zero packaging change.</li>
+              <li>Sponsors pay us to give their products away → negative-cost marketing.</li>
+              <li>WhatsApp login = 3-second frictionless entry.</li>
+              <li>Weekly content engine = free UGC + live show.</li>
+              <li>17.5 M codes ready – scalable to any volume.</li>
+              <li>Transferable to IBE 3 kg ice cubes next year.</li>
+            </ol>
+          </div>
+        </section>
       </div>
     </div>
   )
