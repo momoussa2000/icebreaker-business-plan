@@ -374,9 +374,104 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 17: Go-to-Market Calendar */}
+        {/* Section 17: UPDATED COSTING & SCALE-UP BRIDGE */}
         <section className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">17. Go-to-Market Calendar (Flavor Centric)</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">17. UPDATED COSTING &amp; SCALE-UP BRIDGE</h2>
+          <p className="text-sm text-gray-600 mb-6">(Reflects accountant’s full-capacity sheet vs. bootstrap ramp)</p>
+
+          {/* 17.1 Basis of two scenarios */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">17.1 Basis of two scenarios</h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Metric</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Bootstrap Year 1</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Steady-State Year 2</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200 text-sm text-gray-800">
+                  <tr><td className="px-4 py-2">Operating days / month</td><td className="px-4 py-2">20</td><td className="px-4 py-2">20</td></tr>
+                  <tr><td className="px-4 py-2">Hours / day</td><td className="px-4 py-2">10</td><td className="px-4 py-2">10</td></tr>
+                  <tr><td className="px-4 py-2">Machine speed (pcs/min)</td><td className="px-4 py-2">200</td><td className="px-4 py-2">200</td></tr>
+                  <tr><td className="px-4 py-2">Daily output (pcs)</td><td className="px-4 py-2">20 000</td><td className="px-4 py-2">200 000</td></tr>
+                  <tr><td className="px-4 py-2">Monthly output (pcs)</td><td className="px-4 py-2">400 000</td><td className="px-4 py-2">4 992 000</td></tr>
+                  <tr><td className="px-4 py-2">Utilisation</td><td className="px-4 py-2">17 %</td><td className="px-4 py-2">100 %</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 17.2 Cost breakdown comparison */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">17.2 Cost breakdown comparison (EGP per piece)</h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Component</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Bootstrap COGS</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Full-Capacity COGS*</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Δ driver</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200 text-sm text-gray-800">
+                  <tr><td className="px-4 py-2">Juice mix</td><td className="px-4 py-2">7.00</td><td className="px-4 py-2">7.00</td><td className="px-4 py-2">identical blend</td></tr>
+                  <tr><td className="px-4 py-2">Sleeve + stick + carton</td><td className="px-4 py-2">0.48</td><td className="px-4 py-2">0.60</td><td className="px-4 py-2">electricity + glue now inside</td></tr>
+                  <tr><td className="px-4 py-2">Electricity (direct)</td><td className="px-4 py-2">—</td><td className="px-4 py-2">0.20</td><td className="px-4 py-2">compressor at full load</td></tr>
+                  <tr><td className="px-4 py-2">Direct labour</td><td className="px-4 py-2">—</td><td className="px-4 py-2">0.50</td><td className="px-4 py-2">8 operators spread over 4 M pcs</td></tr>
+                  <tr className="bg-blue-50 font-semibold"><td className="px-4 py-2">Total COGS</td><td className="px-4 py-2">7.48</td><td className="px-4 py-2">8.00</td><td className="px-4 py-2">+0.52 absorbed by volume</td></tr>
+                  <tr><td className="px-4 py-2">Selling price (inc. VAT)</td><td className="px-4 py-2">15</td><td className="px-4 py-2">15</td><td className="px-4 py-2">same</td></tr>
+                  <tr className="bg-green-50 font-bold"><td className="px-4 py-2">Gross margin / pc</td><td className="px-4 py-2">5.68</td><td className="px-4 py-2">7.00</td><td className="px-4 py-2">+1.32 (fixed-cost dilution)</td></tr>
+                </tbody>
+              </table>
+              <p className="text-xs text-gray-600 mt-2">*Source: internal cost sheet dated 8-Oct-2025 (accountant PDF).</p>
+            </div>
+          </div>
+
+          {/* 17.3 Monthly P&L bridge */}
+          <div className="space-y-3 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">17.3 Monthly P&amp;L bridge</h3>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Scenario</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">Net Revenue</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">COGS + OH</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">EBITDA</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-600 uppercase">EBITDA margin</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200 text-sm text-gray-800">
+                  <tr><td className="px-4 py-2">Bootstrap 400 k pcs</td><td className="px-4 py-2">5.26 M</td><td className="px-4 py-2">2.34 M</td><td className="px-4 py-2">2.80 M</td><td className="px-4 py-2">53 %</td></tr>
+                  <tr><td className="px-4 py-2">Full 4.99 M pcs</td><td className="px-4 py-2">65.9 M</td><td className="px-4 py-2">25.9 M</td><td className="px-4 py-2">40.0 M</td><td className="px-4 py-2">61 %</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 17.4 Cash-flow implication */}
+          <div className="space-y-2 mb-8">
+            <h3 className="text-xl font-semibold text-blue-900">17.4 Cash-flow implication</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li>Every <strong>+1 000 pcs/day</strong> beyond 20 k adds <strong>~235 k EGP</strong> yearly EBITDA (vs. 188 k in old sensitivity).</li>
+              <li>Machine pay-back at <strong>full capacity</strong>: 350 k machine ÷ 40 M monthly EBITDA ≈ <strong>1 week</strong>.</li>
+              <li>Working-capital gap scales to <strong>33 M EGP</strong> at 4.99 M pcs – requires <strong>factoring line expansion</strong> to 25 M EGP (secured by receivables).</li>
+            </ul>
+          </div>
+
+          {/* 17.5 Investor takeaway */}
+          <div className="space-y-2">
+            <h3 className="text-xl font-semibold text-blue-900">17.5 Investor takeaway</h3>
+            <p className="text-gray-700">The accountant’s numbers <strong>validate</strong> our bootstrap economics and reveal a <strong>step-function upswing</strong>: once volume crosses 50 % utilisation, <strong>gross margin per piece jumps 23 %</strong> and <strong>absolute cash generation rises 14×</strong>. Include both tables in the plan to show <strong>downside-protected entry</strong> and <strong>explosive upside at scale</strong>.</p>
+          </div>
+        </section>
+
+        {/* Section 18: Go-to-Market Calendar */}
+        <section className="bg-white rounded-xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">18. Go-to-Market Calendar (Flavor Centric)</h2>
           <div className="space-y-6">
             
             {/* Calendar Table */}
@@ -472,13 +567,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 18: Gamification & Promotion Platform – "POP & WIN" */}
+        {/* Section 19: Gamification & Promotion Platform – "POP & WIN" */}
         <section className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">18. Gamification & Promotion Platform – &quot;POP &amp; WIN&quot;</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">19. Gamification & Promotion Platform – &quot;POP &amp; WIN&quot;</h2>
 
-          {/* 18.1 Core Invention */}
+          {/* 19.1 Core Invention */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.1 Core Invention</h3>
+              <h3 className="text-xl font-semibold text-blue-900">19.1 Core Invention</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>NO unique QR, NO variable print, NO new sleeve artwork.</li>
               <li>One 6-character code laser-engraved on the wooden stick (inside sleeve = tamper-proof).</li>
@@ -487,9 +582,9 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* 18.2 Consumer Journey */}
+          {/* 19.2 Consumer Journey */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.2 Consumer Journey</h3>
+              <h3 className="text-xl font-semibold text-blue-900">19.2 Consumer Journey</h3>
             <ol className="list-decimal pl-6 space-y-2 text-gray-700">
               <li>Buy → peel → read stick.</li>
               <li>One-tap &quot;Login with WhatsApp&quot; on icebreaker-win.com.</li>
@@ -505,9 +600,9 @@ export default function Home() {
             </ol>
           </div>
 
-          {/* 18.3 Back-End Logic */}
+          {/* 19.3 Back-End Logic */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.3 Back-End Logic (Fair &amp; Simple)</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.3 Back-End Logic (Fair &amp; Simple)</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Real-time hash = SHA-256(code + weekly-secret-salt) mod 1,000.</li>
               <li>000–899 = lose, 900–989 = 100 EGP, 990–999 = Golden.</li>
@@ -526,9 +621,9 @@ export default function Home() {
             </details>
           </div>
 
-          {/* 18.4 Monetising the Prizes */}
+          {/* 19.4 Monetising the Prizes */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.4 Monetising the Prizes (Negative-Cost Marketing)</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.4 Monetising the Prizes (Negative-Cost Marketing)</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Phones / TVs – Samsung, Xiaomi, Carrefour: 20–25 % discount for sleeve impressions + un-boxing reels.</li>
               <li>Holidays – TravelStart voucher codes at -15 %.</li>
@@ -537,9 +632,9 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* 18.5 Weekly Live Show */}
+          {/* 19.5 Weekly Live Show */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.5 Weekly Live Show (Free Media)</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.5 Weekly Live Show (Free Media)</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Friday 7 p.m. Facebook + Instagram + TikTok live draw.</li>
               <li>Viewers drop &quot;🥭&quot; emoji to enter parallel 50 EGP draw → boosts algorithm.</li>
@@ -547,16 +642,16 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* 18.6 Data Asset */}
+          {/* 19.6 Data Asset */}
           <div className="space-y-2 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.6 Data Asset</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.6 Data Asset</h3>
             <p className="text-gray-700">WhatsApp login captures: mobile number, governorate, prize preference.</p>
             <p className="text-gray-700">→ 200 k opted-in consumers in 12 months → sell sponsored pushes at 200 EGP CPM.</p>
           </div>
 
-          {/* 18.7 Cost & P&L */}
+          {/* 19.7 Cost & P&L */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.7 Cost &amp; P&amp;L (per 400 k pcs month)</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.7 Cost &amp; P&amp;L (per 400 k pcs month)</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
@@ -595,9 +690,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 18.8 Legal Compliance */}
+          {/* 19.8 Legal Compliance */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.8 Legal Compliance (Egypt)</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.8 Legal Compliance (Egypt)</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li>Obtain Ministry of Social Solidarity raffle permit (2 k EGP, 48 h online).</li>
               <li>Publish T&amp;Cs on site (age 18+, employees excluded, 30-day prize claim).</li>
@@ -605,9 +700,9 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* 18.9 Roll-Out Road-Map */}
+          {/* 19.9 Roll-Out Road-Map */}
           <div className="space-y-3 mb-8">
-            <h3 className="text-xl font-semibold text-blue-900">18.9 Roll-Out Road-Map</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.9 Roll-Out Road-Map</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
@@ -646,9 +741,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 18.10 Why Ground-Breaking */}
+          {/* 19.10 Why Ground-Breaking */}
           <div className="space-y-3">
-            <h3 className="text-xl font-semibold text-blue-900">18.10 Why Ground-Breaking</h3>
+            <h3 className="text-xl font-semibold text-blue-900">19.10 Why Ground-Breaking</h3>
             <ol className="list-decimal pl-6 space-y-2 text-gray-700">
               <li>Uses existing stick real-estate – zero packaging change.</li>
               <li>Sponsors pay us to give their products away → negative-cost marketing.</li>
