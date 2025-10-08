@@ -1,3 +1,5 @@
+"use client"
+
 import { Section } from '@/components/ui/Section'
 import { Line } from 'react-chartjs-2'
 import {
