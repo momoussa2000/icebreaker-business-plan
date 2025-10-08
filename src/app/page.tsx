@@ -513,6 +513,17 @@ export default function Home() {
               <li>000–899 = lose, 900–989 = 100 EGP, 990–999 = Golden.</li>
               <li>No pre-generated winner list = zero leakage risk.</li>
             </ul>
+            <details className="mt-3 bg-blue-50 border border-blue-100 rounded-lg p-4">
+              <summary className="cursor-pointer font-semibold text-blue-900">How it works (technical)</summary>
+              <div className="mt-3 space-y-3 text-sm text-gray-800">
+                <p><strong>Deterministic draw:</strong> outcome = HMAC_SHA256(code, weeklySecretSalt) mod 1000. Same code → same result within a week.</p>
+                <p><strong>Prize map:</strong> 000–899 = lose, 900–989 = 100&nbsp;EGP, 990–999 = Golden ticket.</p>
+                <p><strong>Weekly salt rotation:</strong> new secret every Friday; last week’s salt can be published for public verification.</p>
+                <p><strong>Single-use redemption:</strong> DB enforces one payout per (code, week). Later attempts see “already redeemed”.</p>
+                <p><strong>Anti‑abuse:</strong> WhatsApp login, rate limiting/CAPTCHA, device/IP velocity checks, per-user caps.</p>
+                <p><strong>Payouts:</strong> wins create payout jobs; Vodafone Cash / InstaPay webhooks confirm PAID status with retries.</p>
+              </div>
+            </details>
           </div>
 
           {/* 18.4 Monetising the Prizes */}
