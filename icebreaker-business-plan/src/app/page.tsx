@@ -1096,7 +1096,7 @@ export default function Home() {
                     <div className="bg-white p-4 rounded-lg shadow-sm">
                       <h4 className="font-semibold text-blue-800 mb-2">Voo Online Market</h4>
                       <p className="text-sm text-gray-700">• Dark-store model; add to "frozen dessert" crate</p>
-                      <p className="text-sm text-gray-700">• Delivery-fee waiver if basket > 200 EGP</p>
+                      <p className="text-sm text-gray-700">• Delivery-fee waiver if basket &gt; 200 EGP</p>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-sm">
                       <h4 className="font-semibold text-blue-800 mb-2">Circle K Gas Stations</h4>
