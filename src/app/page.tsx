@@ -117,7 +117,7 @@ export default function Home() {
                 <div>
                   <h4 className="text-lg font-semibold text-orange-800 mb-3">Competitive Advantages</h4>
                   <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• "Local pride" story and leverages Egypt's global cost advantage</li>
+                    <li>• &quot;Local pride&quot; story and leverages Egypt&apos;s global cost advantage</li>
                     <li>• -18% vs. Peruvian or Indian mango concentrate</li>
                     <li>• Bright orange sleeve with pharaonic mango motif</li>
                     <li>• Flagship product positioning</li>
@@ -277,7 +277,7 @@ export default function Home() {
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h4 className="font-semibold text-blue-800 mb-2">Voo Online Market</h4>
-                    <p className="text-sm text-gray-700">• Dark-store model; add to "frozen dessert" crate</p>
+                    <p className="text-sm text-gray-700">• Dark-store model; add to &quot;frozen dessert&quot; crate</p>
                     <p className="text-sm text-gray-700">• Delivery-fee waiver if basket &gt; 200 EGP</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
@@ -329,7 +329,7 @@ export default function Home() {
                     <h4 className="font-semibold text-green-800 mb-2">🏖️ Tourists & Stay-cationers</h4>
                     <p className="text-sm text-gray-700">• Red-Sea, North-Coast locations</p>
                     <p className="text-sm text-gray-700">• Buy on impulse</p>
-                    <p className="text-sm text-gray-700">• Attracted to "Authentic Egyptian Mango" claim</p>
+                    <p className="text-sm text-gray-700">• Attracted to &quot;Authentic Egyptian Mango&quot; claim</p>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -398,7 +398,7 @@ export default function Home() {
                     </tr>
                     <tr>
                       <td className="px-4 py-2 text-sm font-medium text-gray-900">M2</td>
-                      <td className="px-4 py-2 text-sm text-gray-700">Add Lemon-Mint; "Cool your Koshary" promo with Voo</td>
+                      <td className="px-4 py-2 text-sm text-gray-700">Add Lemon-Mint; &quot;Cool your Koshary&quot; promo with Voo</td>
                       <td className="px-4 py-2 text-sm text-gray-700">60k pcs cumulative</td>
                     </tr>
                     <tr>
@@ -413,7 +413,7 @@ export default function Home() {
                     </tr>
                     <tr>
                       <td className="px-4 py-2 text-sm font-medium text-gray-900">M5</td>
-                      <td className="px-4 py-2 text-sm text-gray-700">Guava launch in Seoudi "Local Harvest" campaign</td>
+                      <td className="px-4 py-2 text-sm text-gray-700">Guava launch in Seoudi &quot;Local Harvest&quot; campaign</td>
                       <td className="px-4 py-2 text-sm text-gray-700">200k pcs cumulative</td>
                     </tr>
                   </tbody>
@@ -428,14 +428,14 @@ export default function Home() {
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Month 1: Focus booths at premium locations</li>
                   <li>• Month 3: Beach-club selfie stand for social media</li>
-                  <li>• "Authentic Egyptian Mango" messaging</li>
+                  <li>• &quot;Authentic Egyptian Mango&quot; messaging</li>
                   <li>• Pharaonic design elements</li>
                 </ul>
               </div>
               <div className="bg-green-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-green-900 mb-4">🍋 Lemon-Mint Strategy</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• Month 2: "Cool your Koshary" promo</li>
+                  <li>• Month 2: &quot;Cool your Koshary&quot; promo</li>
                   <li>• Nostalgic street-drink positioning</li>
                   <li>• Voo online market partnership</li>
                   <li>• Pale-green sleeve design</li>

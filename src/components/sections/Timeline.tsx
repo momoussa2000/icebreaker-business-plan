@@ -30,7 +30,7 @@ export function Timeline() {
         <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200" />
         
         <div className="space-y-8">
-          {timelineItems.map((item, index) => (
+          {timelineItems.map((item) => (
             <div key={item.time} className="relative pl-12">
               <div className={`absolute left-0 w-8 h-8 rounded-full flex items-center justify-center
                 ${item.status === 'current' ? 'bg-blue-500' : 'bg-blue-200'}`}>
