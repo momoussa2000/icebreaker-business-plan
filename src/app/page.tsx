@@ -323,7 +323,7 @@ export default function Home() {
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h4 className="font-semibold text-green-800 mb-2">👨‍👩‍👧‍👦 Young Families (mothers 28-40)</h4>
                     <p className="text-sm text-gray-700">• Seek healthier treats</p>
-                    <p className="text-sm text-gray-700">• Willing to pay 15 EGP if < 10g sugar & real fruit</p>
+                    <p className="text-sm text-gray-700">• Willing to pay 15 EGP if &lt; 10g sugar &amp; real fruit</p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h4 className="font-semibold text-green-800 mb-2">🏖️ Tourists & Stay-cationers</h4>
